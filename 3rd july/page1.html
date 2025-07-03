@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT TAG</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+           <option value="option1">choose city</option>
+            <option value="option2">City 1</option>
+           <option value="option2" selected>City 2</option>
+           <option value="option3">City 3</option>
+           <option value="option4">City 4</option>
+           <option value="option5">City 5</option>
+        </select><br><br>
+        <label for="range">Select a value:</label>
+        <input type="range" id="range" name="range" min="1" max="100" title="Select a value between 1 and 100">
+        <br><br>
+        <label for ="date">Select a date:</label>
+        <input type="date" value="2023-07-03" id="date" name="date">
+        <br><br>
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+        <input type ="hidden" id="hidden" name="hidden" value="hidden value">
+        <br><br>
+        <textarea name="textarea" id="textarea" placeholder="Enter your text here..."></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
