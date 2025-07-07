@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Listner</title>
+    <script>
+        function showAlert() {
+            alert('Button clicked!');
+        }
+        function fun2(){
+            var obj = document.getElementById("lbl");
+            alert("obj.innerText");
+        }
+        function fun3(){
+            var ob = document.getElementById('lbl');
+            ob.innerText  = "Good Night";
+        }
+        function fun4(){
+            var ob = documet.getElementById('lbl');
+            ob.value = "hello all";
+
+        }
+        function fun5(){
+            var ob = documet.getElementById('lbl');
+            alert(ob.value);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 id ="lbl" onclick="alert('good morning')">acropolis college indore </h1>
+    <button onclick ="alert('good morning students!')">okay</button>
+    <button onclick="showAlert()">  Click Me
+    </button>
+    <hr>
+
+    <button onclick ="fun2()">okay</button>
+    <button onclick ="fun3()">okay</button>
+
+
+    
+    <input type="text " id="lbl"/> <br><br>
+    <button onclick = "fun4()"  >register</button>
+    <button onclick = "fun5()"  >submit</button>
+</body>
+</html>
