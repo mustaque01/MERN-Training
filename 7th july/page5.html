@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeydown="checkKey(event)" placeholder="Type something here...">
+    <script>
+        function checkKey(event) {
+            var code = event.keyCode || event.which;
+            console.log('Key code:', code);
+            if(!(code>=48 && code<=57)) {
+                if (event.key === 'Enter') {
+                    alert('You pressed Enter!');
+                } else {
+                    console.log('Key pressed:', event.key);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- This is a simple HTML document with an input field for text. -->
+<!-- The input field allows users to enter text, which can be used for various purposes such as searching, submitting forms, or collecting user information.
+ 
+key events
+key down
+key up
+key press
+-->
