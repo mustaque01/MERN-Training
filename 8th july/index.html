@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="init()">
+    <div align ="center">
+    <h1 id="lbl">Students Records</h1>
+    <hr>
+    <h4>Add New Students</h4>
+    <input type="text" class="input-field" placeholder="Name" id="name">
+    <input type="number" class="input-field" placeholder="Roll No" id="rollNo">
+    <label for="branchSelect">Branch:</label>
+    <select id="branchSelect">
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="ME">ME</option>
+    </select>
+    <hr>
+    <input type="number" class="input-field" placeholder="Java Marks" id="javaMarks">
+    <input type="number" class="input-field" placeholder="Python Marks" id="pythonMarks">
+    <input type="number" class="input-field" placeholder="JavaScript Marks" id="jsMarks"><br>
+    <button onclick="add()" id="addBtn">Add Student</button>
+    <hr>
+
+    <table border="1" align="center" cellpadding="10" cellspacing="5">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Grade</th>
+                <th>Roll No</th>
+                <th>Java</th>
+                <th>Python</th>
+                <th>JavaScript</th> 
+                <th>Total Marks</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>20</td>
+                <td>A</td>
+                <td>101</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+                <td>363</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>22</td>
+                <td>B</td>
+                <td>95</td>
+                <td>80</td>
+                <td>85</td>
+                <td>90</td>
+                <td>450</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>21</td>
+                <td>A</td>
+                <td>90</td>
+                <td>85</td>
+                <td>88</td>
+                <td>92</td>
+                <td>355</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+<script src="./code.js"></script>
+</html>
