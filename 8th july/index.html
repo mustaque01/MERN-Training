@@ -8,6 +8,7 @@
 </head>
 <body onload="init()">
     <div align ="center">
+        <form onsubmit="add(event)">
     <h1 id="lbl">Students Records</h1>
     <hr>
     <h4>Add New Students</h4>
@@ -20,10 +21,10 @@
         <option value="ME">ME</option>
     </select>
     <hr>
-    <input type="number" class="input-field" placeholder="Java Marks" id="javaMarks">
-    <input type="number" class="input-field" placeholder="Python Marks" id="pythonMarks">
-    <input type="number" class="input-field" placeholder="JavaScript Marks" id="jsMarks"><br>
-    <button onclick="add()" id="addBtn">Add Student</button>
+    <input type="number" class="input-field" placeholder="Java Marks" id="javaMarks" required>
+    <input type="number" class="input-field" placeholder="Python Marks" id="pythonMarks" required>
+    <input type="number" class="input-field" placeholder="JavaScript Marks" id="jsMarks" required><br>
+    <button id="addBtn">Add Student</button>
     <hr>
 
     <table border="1" align="center" cellpadding="10" cellspacing="5">
@@ -40,12 +41,12 @@
 
             </tr>
         </thead>
-        <tbody>
+        <tbody >
             <tr>
                 <td>John Doe</td>
-                <td>20</td>
+                <td>CSE</td>
                 <td>A</td>
-                <td>101</td>
+                <td>101011</td>
                 <td>85</td>
                 <td>90</td>
                 <td>88</td>
@@ -53,9 +54,9 @@
             </tr>
             <tr>
                 <td>Jane Smith</td>
-                <td>22</td>
+                <td>ECE</td>
                 <td>B</td>
-                <td>95</td>
+                <td>951011</td>
                 <td>80</td>
                 <td>85</td>
                 <td>90</td>
@@ -63,9 +64,9 @@
             </tr>
             <tr>
                 <td>Emily Johnson</td>
-                <td>21</td>
+                <td>CSE</td>
                 <td>A</td>
-                <td>90</td>
+                <td>901011</td>
                 <td>85</td>
                 <td>88</td>
                 <td>92</td>
@@ -77,3 +78,10 @@
 </body>
 <script src="./code.js"></script>
 </html>
+
+
+<!-- 
+1. validation 
+2. onsubmit events
+3. data server sending+
+--!->```
