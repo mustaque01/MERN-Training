@@ -10,7 +10,6 @@ function init(){
     
 
 }
-
 function add (ev){
     ev.preventDefault(); // Prevent form submission
     var roll = rollbox.value;
