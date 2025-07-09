@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript object</title>
+</head>
+<body>
+    <script>
+        // Creating a JavaScript object
+        const person = {
+            name: "John",
+            age: 30,
+            city: "New York",
+            mobile :["123-456-7890", "987-654-3210"],
+            phone :{ student : "123-456-7890", father: "987-654-3210" },
+            address :"123 Main St, New York, NY",
+            adds :{
+                plot:123,
+                landmark : "main st",
+                city : "New York",
+                state : "NY"
+            }
+        };
+
+        // Accessing object properties
+        console.log(person.name);  // Output: John
+        console.log(person['age']); // Output: 30
+        console.log(person.mobile[0]); // Output: 123-456-7890
+        console.log(person.phone.student); // Output: 123-456-7890
+        console.log(person.address); // Output: 123 Main St, New York, NY
+        console.log(person.adds.plot); // Output: 123
+        console.log(person.adds.landmark); // Output: main st
+        console.log(person.adds.city); // Output: New York
+        console.log(person.adds.state); // Output: NY
+
+    </script>
+</body>
+</html>

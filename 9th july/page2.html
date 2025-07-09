@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students = {
+            name: "Jonnx",
+            age: 23,
+            city: "New York",
+            mobile :["123-456-7890", "987-654-3210"],
+            phone :{ student : "123-456-7890", father: "987-654-3210" },
+            address :"123 Main St, New York, NY",
+            adds :{
+                plot:123,
+                landmark : "main st",
+                city : "New York",
+                state : "NY"
+            }
+        },
+        students2 = {
+            name: "Doe",
+            age: 25,
+            city: "Los Angeles",
+            mobile :["321-654-0987", "456-789-1230"],
+            phone :{ student : "321-654-0987", father: "456-789-1230" },
+            address :"456 Elm St, Los Angeles, CA",
+            adds :{
+                plot:456,
+                landmark : "elm st",
+                city : "Los Angeles",
+                state : "CA"
+            }
+        };
+
+        for( var stud of students){
+            console.log(stud.name, stud.age, stud.city);
+        }
+    </script>
+</body>
+</html>
