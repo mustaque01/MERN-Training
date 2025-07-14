@@ -1,0 +1,2 @@
+//5. What is Hoisting in JavaScript?
+// In Javascript, one can use a variable or call a function even before they are declared in the code. This happens due to Hoisting which is a JavaScript feature. Hoisting declarations are moved to the top of their scope during compilation.
